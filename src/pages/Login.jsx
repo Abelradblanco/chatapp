@@ -1,8 +1,13 @@
+import { useEffect } from "react";
 import {UserAuth} from "../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const navigate = useNavigate();
+
   //get current user
   const{currentUser, signinWithGoogle} = UserAuth();
+  console.log(currentUser)
   
   const handleLogin = async () => {
     try {
@@ -11,6 +16,12 @@ const Login = () => {
       console.log(error)
     }
   }
+
+  useEffect(() => {
+    if(currentUser){
+      navigate("/chat")
+    }
+  }, [currentUser]) //if we have dependency current user redirect to /chat route
 
   return (
     <div
