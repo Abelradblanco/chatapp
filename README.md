@@ -9,5 +9,5 @@ Currently, two official plugins are available:
 
 1. Install Tailwind dependencies : https://tailwindcss.com/docs/guides/vite 
 2. Install daisyUI: https://daisyui.com/docs/install/
-3. 
-4. 
+3. Install react-router-dom: npm i react-router-dom
+4. Install Firebase: npm install firebase
