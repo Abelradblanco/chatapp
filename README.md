@@ -11,3 +11,8 @@ Currently, two official plugins are available:
 2. Install daisyUI: https://daisyui.com/docs/install/
 3. Install react-router-dom: npm i react-router-dom
 4. Install Firebase: npm install firebase
+
+# TO START:
+npm run dev
+
+# View Demo: https://chatapp-67bcd.web.app/
